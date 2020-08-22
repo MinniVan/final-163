@@ -23,3 +23,6 @@ Installing these said libraries is achieved by using the anaconda platform and t
 
 We share our original data via our google doc which contained an extremely large data set.
 However, now the original file needs to be renamed to 'larger_sample.z'
+
+Link to BOTH the small sample and large sample:
+https://drive.google.com/drive/folders/1QJ2U1QGOa6pTFUmottlxUPvgBWUg5jG8?usp=sharing
