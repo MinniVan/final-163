@@ -2,8 +2,9 @@
 
 Our program has three modules. One to open and process the data (process_data.py),
 one that runs the program (program.py), and a script that prompts the user for 
-their input (prompt_script.py) to help run the program. A jupyter notebook will be
-also be required.  
+their input (prompt_script.py) to help run the program. When running the program via
+the terminal we received an error regarding the space limit, as a result,
+a jupyter notebook is required to succesfully run the program. 
 
 Additionally, in order to run and reproduce our results all of these files will 
 need to stored and ran in the same folder, that includes the jupyter notebook. 
