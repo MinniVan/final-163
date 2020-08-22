@@ -20,3 +20,6 @@ in order to open, store, and manipulate our data.
 
 Installing these said libraries is achieved by using the anaconda platform and typing 
 "conda install" to install.
+
+We share our original data via our google doc which contained an extremely large data set.
+However, now the original file needs to be renamed to 'larger_sample.z'
