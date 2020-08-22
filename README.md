@@ -26,3 +26,7 @@ However, now the original file needs to be renamed to 'larger_sample.z'
 
 Link to BOTH the small sample and large sample:
 https://drive.google.com/drive/folders/1QJ2U1QGOa6pTFUmottlxUPvgBWUg5jG8?usp=sharing
+
+If you choose the large data file then all the plots will have their y-axis plotted in the 
+logarithimic scale.
+If you choose the small data file a normal graph will be plotted.
