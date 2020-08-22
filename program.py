@@ -8,9 +8,13 @@ import prompt_scripts as prompt
 
 # get the data from Data
 # make table
+# ask for user input
 
 
 def jet_count_table(data_df, data):
+    # data_df dataframe representation of whole data
+    # data represent the class
+    # return returns dataframe for the jet count
     keys_count = dict()
     keys_count['Total'] = data_df.shape[0]
     labels_k = data.get_labels_truth_table()
@@ -36,6 +40,10 @@ def jet_count_table(data_df, data):
 
     
 def plot_feature(data_df, data, feature):
+    # takes data_df to represent entire data
+    # data to represent class
+    # feature to represent the high or low level feature
+    # plots histogram of desired feature
     colors = ['purple', 'red', 'green', 'orange', 'blue']
     legend_labels = ['top', 'X', 'W', 'gluon', 'quark']
     x = dict()
@@ -53,6 +61,8 @@ def plot_feature(data_df, data, feature):
 
 
 def low_level(data):
+    # takes in class data
+    # returns desired low level features
     all_low = data.get_low_features()
     wanted_low = set(['ptrel', 'etarot', 'phirot', 'erel', 'deltaR', 
                     'costhetarel', 'pdgid'])
@@ -65,6 +75,9 @@ def low_level(data):
 
 
 def high_level_kinematics(data):
+    # takes in data as class
+    # if user chose kinetmatics as high level
+    # return the feature
     all_high = data.get_high_features()
     wanted_high = ['mass_mmdt', 'pt']
     list_ = [i for i in all_high if (i[2:] in wanted_high)]
@@ -75,6 +88,10 @@ def high_level_kinematics(data):
     return result 
     
 def high_level_subst(data):
+    # takes in data as class
+    # if user chose substructures as high level
+    # features 
+    # returns said feature
     all_high = data.get_high_features()
     wanted_high = ['zlogz', 'multiplicity']
     
@@ -86,6 +103,9 @@ def high_level_subst(data):
     return result 
     
 def high_level_energy(data):
+    # if user chose energy correlation function as high 
+    # energy
+    # return said feature
     all_high = data.get_high_features()
     wanted_high = ['c1_b0_mmdt', 'c1_b1_mmdt', 'c1_b2_mmdt', 
                     'c2_b1_mmdt', 'c2_b2_mmdt', 'd2_b1_mmdt',
@@ -101,6 +121,11 @@ def high_level_energy(data):
 
     
 def main():
+    # processes user input information
+    # outputs the count of jets
+    # asks user for their input
+    # asks user if they would like to plot
+    # another feature
     prompt.intro()
     file_name = prompt.choose_file()
     print('Hang in there! We are loading your sample...')
