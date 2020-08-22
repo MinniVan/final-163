@@ -114,8 +114,8 @@ def hl_kinematics():
     # they are then prompted to chose a specific feature to plot
     print()
     print('Jet kinematics:')
-    print('     1. Jet mass computed based on modified mass drop tagger')
-    print('     2. Jet pT (transverse momentum)')
+    print('     1. Jet pT (transverse momentum)')
+    print('     2. Jet mass computed based on modified mass drop tagger')
     while True:
         user_input = input('Enter the number associated with a Low Level',
                            'Feature type: ')
